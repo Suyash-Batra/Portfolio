@@ -55,7 +55,7 @@ export default function Navbar() {
               </li>
             </ul>
             <a href="#resume">
-              <button type="button" class="btn custom-btn">
+              <button type="button" className="btn custom-btn">
                 Resume
               </button>
             </a>

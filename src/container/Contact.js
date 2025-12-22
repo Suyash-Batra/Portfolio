@@ -30,14 +30,14 @@ export default function Contact() {
           </div>
         </center>
         <div className="parallelContainers">
-          <div class="contact-info">
-            <div class="contact-card">
+          <div className="contact-info">
+            <div className="contact-card">
               <h3>Contact Information</h3>
               <p>Feel free to reach out through any of these channels</p>
 
-              <div class="contact-details">
-                <div class="contact-item">
-                  <i class="fas fa-envelope"></i>
+              <div className="contact-details">
+                <div className="contact-item">
+                  <i className="fas fa-envelope"></i>
                   <div>
                     <h4>
                       <b>
@@ -50,8 +50,8 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div class="contact-item">
-                  <i class="fas fa-phone"></i>
+                <div className="contact-item">
+                  <i className="fas fa-phone"></i>
                   <div>
                     <h4>
                       <b>
@@ -62,8 +62,8 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div class="contact-item">
-                  <i class="fas fa-map-marker-alt"></i>
+                <div className="contact-item">
+                  <i className="fas fa-map-marker-alt"></i>
                   <div>
                     <h4>
                       <b>
@@ -75,11 +75,11 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div class="social-links">
+              <div className="social-links">
                 <h4>
                   <b>Connect with me</b>
                 </h4>
-                <div class="social-icons">
+                <div className="social-icons">
                   <a
                     href="https://github.com/Suyash-Batra"
                     target="_blank"
@@ -109,8 +109,8 @@ export default function Contact() {
             </div>
           </div>
 
-          <div class="contact-form-container">
-            <div class="contact-card">
+          <div className="contact-form-container">
+            <div className="contact-card">
               <h3>Send a Message</h3>
               <p>
                 Fill out the form below and I'll get back to you as soon as
@@ -118,27 +118,27 @@ export default function Contact() {
               </p>
 
               <form action="https://formspree.io/f/mzdpjoqz" method="POST">
-                <div class="form-group">
+                <div className="form-group">
                   <label>Name</label>
                   <input type="text" name="name" required />
                 </div>
 
-                <div class="form-group">
+                <div className="form-group">
                   <label>Email</label>
                   <input type="email" name="email" required />
                 </div>
 
-                <div class="form-group">
+                <div className="form-group">
                   <label>Message</label>
                   <textarea name="message" rows="5" required></textarea>
                 </div>
 
-                <button type="submit" class="btn custom-btn hmp">
+                <button type="submit" className="btn custom-btn hmp">
                   <FontAwesomeIcon icon={faPaperPlane} /> Send Message
                 </button>
               </form>
 
-              <div id="form-message" class="form-message"></div>
+              <div id="form-message" className="form-message"></div>
             </div>
           </div>
         </div>

@@ -11,12 +11,12 @@ export default function Footer() {
   return (
     <>
       <div className="sectionContainer bg1">
-        <div class="footer-content">
-          <div class="footer-logo">
+        <div className="footer-content">
+          <div className="footer-logo">
             <a href="#home">Suyash Batra</a>
           </div>
 
-          <nav class="footer-nav">
+          <nav className="footer-nav">
             <ul>
               <li>
                 <a href="#home">Home</a>
@@ -36,7 +36,7 @@ export default function Footer() {
             </ul>
           </nav>
 
-          <div class="footer-social">
+          <div className="footer-social">
             <a
               href="https://github.com/Suyash-Batra"
               target="_blank"
