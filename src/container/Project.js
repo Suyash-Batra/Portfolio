@@ -18,7 +18,10 @@ export default function Project() {
         <div className="parallelContainers">
           <div className="project-card" data-category="web">
             <div className="project-img">
-              <img src="/images/ecomm.jpg" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/ecomm.jpg`}
+                alt="E-commerce Platform"
+              />
             </div>
             <div className="project-content">
               <h3>E-commerce Platform</h3>
@@ -56,7 +59,10 @@ export default function Project() {
           </div>
           <div className="project-card" data-category="web">
             <div className="project-img">
-              <img src="/images/Exp.jpg" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/Exp.jpg`}
+                alt="Expense Tracker"
+              />
             </div>
             <div className="project-content">
               <h3>Expense Tracker</h3>
@@ -92,7 +98,10 @@ export default function Project() {
           </div>
           <div className="project-card" data-category="mobile">
             <div className="project-img">
-              <img src="/images/icon.jpg" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icon.jpg`}
+                alt="StreetRunner Game"
+              />
             </div>
             <div className="project-content">
               <h3>StreetRunner</h3>
@@ -114,7 +123,10 @@ export default function Project() {
           </div>
           <div className="project-card" data-category="mobile">
             <div className="project-img">
-              <img src="/images/icon.png" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icon.png`}
+                alt="Ashborn Game"
+              />
             </div>
             <div className="project-content">
               <h3>Ashborn</h3>
