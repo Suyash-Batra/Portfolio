@@ -26,7 +26,7 @@ export default function Project() {
 
           <ProjectCard
             category="web"
-            image={`${process.env.PUBLIC_URL}/images/exp.jpg`}
+            image={`${process.env.PUBLIC_URL}/images/Exp.jpg`}
             title="BudgetEase"
             description="Expense Tracker with Visual Graphs and Excel"
             tags={["Website", "HTML", "CSS", "Composer", "PHP", "Python"]}
