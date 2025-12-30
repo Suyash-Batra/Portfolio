@@ -34,7 +34,7 @@ export default function Education() {
                 <h5>Symbiosis University</h5>
 
                 <ul>
-                  <li>Current CGPA: 8.6</li>
+                  <li>Current CGPA: 8.74</li>
                   <li>
                     Awarded Merit Scholarship by SIU for academic excellence
                     (Top 4 GPA holders)

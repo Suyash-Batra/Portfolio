@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section id="home" className="intro">
         <div className="container">
-          <div className="intro-content">
+          <div className="intro-content ">
             <h1>
               Hi, I'm <span className="highlight">Suyash Batra</span>
             </h1>

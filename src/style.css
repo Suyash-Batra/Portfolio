@@ -5,7 +5,7 @@ ROOT
   --bg-color: #111827;
   --bg-color2: #1f2937;
   --text-color: white;
-  --purple: #4f46e5;
+  --CustomColor: #0466c8;
   --bg-navbar: rgba(17, 24, 39, 0.9);
 }
 
@@ -13,7 +13,7 @@ ROOT
   --bg-color: white;
   --bg-color2: #e8eaec;
   --text-color: black;
-  --purple: #4f46e5;
+  --CustomColor: var(var(--CustomColor));
   --bg-navbar: rgba(255, 255, 255, 0.9);
 }
 
@@ -24,9 +24,41 @@ ROOT
 /*
 COMMON
 */
-
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: url("./loading.png") no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+a,
+button:hover,
+a:hover,
+button:active,
+a:active,
+button:focus,
+a:focus,
+html,
+body,
+input:focus,
+input:hover,
+textarea:hover,
+textarea:focus,
+textarea,
+input,
+label {
+  cursor: none !important;
 }
 
 h1,
@@ -94,7 +126,7 @@ p {
   height: 5px;
   width: 100px;
   border-radius: 25px;
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
 }
 
 .parallelContainers {
@@ -146,12 +178,12 @@ NAVBAR
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
   transition: width 0.2s ease;
 }
 
 .highlight {
-  color: var(--purple);
+  color: var(--CustomColor);
 }
 
 /* 
@@ -191,7 +223,7 @@ SCROLL DOWN
   height: 40px;
   border-radius: 50%;
   font-size: 2.5rem;
-  color: var(--purple);
+  color: var(--CustomColor);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
 }
@@ -200,31 +232,31 @@ SCROLL DOWN
 BUTTONS
 */
 .custom-btn {
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
   font-weight: 600;
   color: white;
-  border: var(--purple) solid 2px;
+  border: var(--CustomColor) solid 2px;
 }
 .custom-btn:hover {
-  border: var(--purple) solid 2px;
+  border: var(--CustomColor) solid 2px;
   font-weight: 600;
-  color: var(--purple);
+  color: var(--CustomColor);
   background-color: transparent;
   transition: 0.5s;
 }
 
 .custom-btn-2:hover {
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
   font-weight: 600;
   color: white;
-  border: var(--purple) solid 2px;
+  border: var(--CustomColor) solid 2px;
   transition: 0.5s;
 }
 
 .custom-btn-2 {
-  border: var(--purple) solid 2px;
+  border: var(--CustomColor) solid 2px;
   font-weight: 600;
-  color: var(--purple);
+  color: var(--CustomColor);
   background-color: transparent;
 }
 
@@ -261,31 +293,11 @@ BUTTONS
 }
 
 .tabs:hover {
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
   border: none;
   color: white;
   transition: 0.5s;
-  border: solid 2px var(--purple);
-}
-
-button,
-a,
-button:hover,
-a:hover,
-button:active,
-a:active,
-button:focus,
-a:focus,
-html,
-body,
-input:focus,
-input:hover,
-textarea:hover,
-textarea:focus,
-textarea,
-input,
-label {
-  cursor: none !important;
+  border: solid 2px var(--CustomColor);
 }
 
 /*
@@ -302,16 +314,16 @@ ABOUT
   flex: 1;
   background-color: var(--bg-color2);
   color: var(--text-color);
-  border: var(--purple) solid 2px;
+  border: var(--CustomColor) solid 2px;
 }
 
 .card-header {
-  border-bottom: var(--purple) solid 2px;
+  border-bottom: var(--CustomColor) solid 2px;
 }
 
 .card:hover,
 .project-card:hover {
-  box-shadow: var(--purple) 20px 20px 100px;
+  box-shadow: var(--CustomColor) 20px 20px 100px;
   transform: scale(1.05);
   transition: 0.5s;
 }
@@ -413,7 +425,7 @@ EDUCATION
 .timeline-date {
   display: inline-block;
   padding: 0.3rem 0.7rem;
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
   color: white;
   border-radius: 0.25rem;
   font-size: 0.875rem;
@@ -472,7 +484,7 @@ CONTACT
 
 .contact-item i {
   font-size: 1.25rem;
-  color: var(--purple);
+  color: var(--CustomColor);
   margin-top: 0.25rem;
 }
 
@@ -613,7 +625,7 @@ SCROLLBAR
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--purple);
+  background-color: var(--CustomColor);
   border-radius: 10px;
   border: 2px solid var(--bg-color);
 }
@@ -625,7 +637,7 @@ SCROLLBAR
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--purple) var(--bg-color);
+  scrollbar-color: var(--CustomColor) var(--bg-color);
 }
 
 /*
