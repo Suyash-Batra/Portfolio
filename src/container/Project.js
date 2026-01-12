@@ -4,8 +4,8 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Project() {
   return (
-    <div className="sectionContainer bg2">
-      <section id="projects">
+    <section id="projects">
+      <div className="sectionContainer bg2">
         <center>
           <div className="title">
             <b>My Projects</b>
@@ -56,7 +56,7 @@ export default function Project() {
             }}
           />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
