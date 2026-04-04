@@ -293,7 +293,7 @@ BUTTONS
 .tabs {
   background-color: transparent;
   color: var(--text-color);
-  border-radius: 50px;
+  border-radius: 10px;
   border: solid var(--text-color) 2px;
   font-size: 1rem;
   padding: 10px;

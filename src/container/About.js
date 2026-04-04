@@ -111,6 +111,8 @@ export default function About() {
                     <button className="tabs">C#</button>
                     <button className="tabs">MySQL</button>
                     <button className="tabs">SQLite</button>
+                    <button className="tabs">JSP</button>
+                    <button className="tabs">Django</button>
                   </div>
                 </div>
               </div>
@@ -123,6 +125,7 @@ export default function About() {
                     <button className="tabs">Android Studio</button>
                     <button className="tabs">Kotlin</button>
                     <button className="tabs">Unity</button>
+                    <button className="tabs">Postman</button>
                   </div>
                 </div>
               </div>
@@ -132,9 +135,10 @@ export default function About() {
                 </div>
                 <div className="card-body">
                   <div className="card-text">
-                    <button className="tabs">AWS EC2</button>
+                    <button className="tabs">AWS</button>
                     <button className="tabs">Git</button>
                     <button className="tabs">Scikit-learn</button>
+                    <button className="tabs">REST</button>
                   </div>
                 </div>
               </div>
