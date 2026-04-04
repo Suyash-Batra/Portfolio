@@ -19,22 +19,10 @@ export default function Project() {
             image={`${process.env.PUBLIC_URL}/images/chat.jpg`}
             title="ChatHub"
             description="ChatHub is a web application for group discussions real-time"
-            tags={["WebApp", "Django", "Daphne", "Redis", "Celery", "API", "JavaScript"]}
+            tags={["WebApp", "Django", "Daphne", "Redis", "Celery", "API"]}
             viewLink="https://github.com/Suyash-Batra/Chathub.git"
           />
-          <ProjectCard
-            category="game"
-            image={`${process.env.PUBLIC_URL}/images/icon.png`}
-            title="Ashborn"
-            description="A 2D RPG Game"
-            tags={["Game Dev", "Unity", "2D", "C#"]}
-            viewLink="https://play.unity.com/en/games/d39f9fe8-d3ae-4ecf-9e37-e5032a33f850/ashborn  "
-            viewText="Play"
-            downloadLink={{
-              href: "https://suyash-batra.itch.io/ashborn",
-              icon: faDownload,
-            }}
-          />
+
           <ProjectCard
             category="web"
             image={`${process.env.PUBLIC_URL}/images/Exp.jpg`}
@@ -43,6 +31,7 @@ export default function Project() {
             tags={["Website", "HTML", "CSS", "Composer", "PHP", "Python"]}
             viewLink="https://github.com/Suyash-Batra/BudgetEase"
           />
+
           <ProjectCard
             category="web"
             image={`${process.env.PUBLIC_URL}/images/port.jpg`}
@@ -61,12 +50,36 @@ export default function Project() {
           />
 
           <ProjectCard
-            category="mobile"
+            category="game"
             image={`${process.env.PUBLIC_URL}/images/icon.jpg`}
             title="StreetRunner"
             description="A 3D Endless Runner Game Prototype"
             tags={["Game Dev", "Unity", "3D", "C#"]}
             viewLink="https://suyash-batra.itch.io/"
+          />
+
+          <ProjectCard
+            category="web"
+            image={`${process.env.PUBLIC_URL}/images/ecomm.jpg`}
+            title="E-commerce Platform"
+            description="A E-commerce Platform with Login & Add to Cart functionalities"
+            tags={["Website", "HTML", "CSS", "JavaScript", "PHP", "MySQL"]}
+            viewLink="https://github.com/Suyash-Batra/SymbiZone/"
+            githubLink={{ href: "https://github.com", icon: faGithub }}
+          />
+
+          <ProjectCard
+            category="game"
+            image={`${process.env.PUBLIC_URL}/images/icon.png`}
+            title="Ashborn"
+            description="A 2D RPG Game"
+            tags={["Game Dev", "Unity", "2D", "C#"]}
+            viewLink="https://play.unity.com/en/games/d39f9fe8-d3ae-4ecf-9e37-e5032a33f850/ashborn  "
+            viewText="Play"
+            downloadLink={{
+              href: "https://suyash-batra.itch.io/ashborn",
+              icon: faDownload,
+            }}
           />
         </div>
       </div>
